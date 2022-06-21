@@ -1,0 +1,15 @@
+.dockerignore
+Dockerfile
+docker-compose.yaml
+.DS_Store
+README
+.git
+.gitignore
+
+# Python
+**/venv
+
+# Django
+**/db.sqlite3
+**/__pycache__
+

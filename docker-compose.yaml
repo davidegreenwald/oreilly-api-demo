@@ -1,0 +1,28 @@
+version: '3'
+services: 
+  
+  api_database:
+    image: postgres:13
+    volumes: 
+      - postgres:/var/lib/postgresql/data
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+    restart: always
+    networks:
+      - oreilly
+
+  api_app:
+    image: davidegreenwald/oreilly-api:latest
+    ports:
+      - 8000:8000
+    depends_on:
+      - api_database
+    networks:
+      - oreilly
+
+volumes:
+  postgres:
+    driver: local
+networks:
+  oreilly:
+
