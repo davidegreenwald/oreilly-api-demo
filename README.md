@@ -1,16 +1,16 @@
-# O'Reilly Search API Demo
+# O'Reilly Platform Search API Demo
 
 ## About this repo
 
 This API demo is a Python project using Django and the Django REST Framework.
 
 It is capable of populating a local Postgres database with a subset of data from
-the O'Reilly Search API and making it consumable from a number of endpoints.
+the [O'Reilly Platform Search API](https://github.com/davidegreenwald/oreilly-api-demo), making the data consumable from a number of endpoints.
 
 ## Local set-up
 
-Docker and `docker-compose` is the only dependency to demo this project. 
-`docker-compose.yml` includes a built Django Docker container (built from the 
+Docker and `docker-compose` are the only dependencies to demo this project. 
+`docker-compose.yaml` includes a built Django Docker container (built from the 
   Dockerfile in this repo) and Postgres.
 
 ```
