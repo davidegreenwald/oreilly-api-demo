@@ -5,7 +5,7 @@
 This API demo is a Python project using Django and the Django REST Framework.
 
 It is capable of populating a local Postgres database with a subset of data from
-the [O'Reilly Platform Search API](https://github.com/davidegreenwald/oreilly-api-demo), making the data consumable from a number of endpoints.
+the [O'Reilly Platform Search API](https://www.oreilly.com/online-learning/integration-docs/search.html), making the data consumable from a number of endpoints.
 
 ## Local set-up
 
